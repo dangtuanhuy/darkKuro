@@ -1,0 +1,2 @@
+# darkKuro
+myTeam
