@@ -87,6 +87,7 @@ table {
 	bottom: 0;	
 
 }
+<<<<<<< HEAD
 
 /* Menu CSS code */
 .ui.basic.menu {transition: 450ms ease;}
@@ -102,3 +103,11 @@ table {
 	box-shadow: none; border: none;
 	background: #eef4f9!important;
 }
+=======
+.section-contact p{
+	text-align: center;
+	font-size: 18px;
+	padding-bottom: 15px;
+}
+
+>>>>>>> local
