@@ -10,7 +10,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-
+.rob {font-family: 'roboto', sans-serif;}
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -88,6 +88,8 @@ table {
 
 }
 
+.text-center {text-align: center;}
+
 /* Menu CSS code */
 .ui.basic.menu {transition: 450ms ease;}
 .ui.basic.menu.firstMenu {
@@ -102,3 +104,34 @@ table {
 	box-shadow: none; border: none;
 	background: #eef4f9!important;
 }
+
+/* Khung giới thiệu */
+.welcome {
+	background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+	padding-bottom: 5vh;
+}
+.version {margin-bottom: 10px; display: inline-block; background-color: #414141; color: #fff;
+padding: 6px 10px; border-radius: .25rem;}
+.welcomeContent {margin-top: 30vh;}
+#iCss {
+	font-size: 3.2rem;
+	font-family: 'roboto', sans-serif;
+	font-weight: 400;
+	color: #00838F;
+}
+.slogan {font-size: 1.3rem; line-height: 3rem; margin-bottom: 20px; color: #455A64; font-weight: 300;}
+
+/* Responsive css */
+@media (min-width: 768px) {
+
+}
+/* smartphone */
+@media (min-width: 992px) {
+	.welcome {padding-bottom: 10vh;}
+	.slogan {font-size: 1.6rem;}
+}
+/* tablet & small laptop */
+@media (min-width: 1200px) {
+
+}
+/* large screen */
