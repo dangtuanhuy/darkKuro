@@ -8,19 +8,66 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="lib/css/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="lib/css/main.css">
 </head>
 
 <body>
-    <div class="ui container">
+    <div class="ui sidebar left vertical inverted menu">
         <div class="item">
-            <img src="img/logo.svg" width="50px">
+            <img src="img/logo.svg" alt="logo" width="30px">
+        </div>
+        <a href="#" class="item">Introduction</a>
+        <a href="#" class="item">Documentation</a>
+        <a href="#" class="item">Examples</a>
+        <a href="#" class="item">About</a>
+    </div>
+
+    <div class="pusher">
+        <div class="ui basic fixed borderless icon menu">
+            <div class="ui container">
+
+                <div class="item">
+                    <img src="img/logo.svg" alt="iCss">
+                </div>
+                <div id="toggle" class="item">
+                    <i class="sidebar icon"></i>
+                    &ensp;Menu
+                </div>
+
+                <div class="right menu">
+
+                    <div class="item">
+                        <!-- contact team -->
+                        <div class="ui buttons">
+                            <button class="ui button">Github</button>
+                            <div class="or"></div>
+                            <button class="ui facebook button">Facebook</button>
+                        </div>
+                    </div>
+
+                    <!-- social -->
+                    <div class="item">
+                        <div class="ui circular icon blue button">
+                            <i class="download white icon"></i>&ensp;Download
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
         </div>
     </div>
 
 
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
         crossorigin="anonymous"></script>
-    <script src="semantic/dist/semantic.min.js"></script>
+    <script src="lib/js/semantic.min.js"></script>
+    <script>
+        $('#toggle').click(function () {
+            $('.ui.sidebar').transition('pulse');
+            $('.ui.sidebar').sidebar('toggle');
+        });
+    </script>
 </body>
 
 </html>
