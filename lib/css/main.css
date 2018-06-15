@@ -87,3 +87,9 @@ table {
 	bottom: 0;	
 
 }
+.section-contact p{
+	text-align: center;
+	font-size: 18px;
+	padding-bottom: 15px;
+}
+
