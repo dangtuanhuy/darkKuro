@@ -1,6 +1,8 @@
 /* Dùng cho toàn bộ file HTML
 (css chung của tất cả) */
 
+ * {margin: 0; padding: 0;}
+
 /* reset css chuẩn Symatic-Ui 
     link tham khảo: https://meyerweb.com/eric/tools/css/reset/
 */
