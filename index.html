@@ -12,6 +12,7 @@
 </head>
 
 <body>
+    <!-- Bắt đầu menu -->
     <!-- Menu phụ đã bị ẩn đi (màu đen) -->
     <div class="ui sidebar left vertical inverted menu">
         <!-- Mỗi .item là một thành phần trong menu -->
@@ -26,7 +27,7 @@
 
     <!-- Basic - menu chính của trang -->
     <div class="pusher">
-        <div class="ui basic fixed borderless icon menu">
+        <div class="ui basic fixed borderless icon menu" id="menu">
             <!-- Thùng chứa các item cho nó thụt vào -->
             <div class="ui container">
 
@@ -42,27 +43,31 @@
 
                 <!-- Tất cả .item bên phải -->
                 <div class="right menu">
-                    
-                    <!-- nút Github & Facebook -->
-                    <div class="item">
-                        <div class="ui buttons">
-                            <button class="ui button">Github</button>
-                            <div class="or"></div>
-                            <button class="ui facebook button">Facebook</button>
+                    <div class="ui grid">
+                        <div class="sixteen wide column row large screen only">
+                            <!-- nút Github & Facebook -->
+                            <div class="item">
+                                <div class="ui buttons">
+                                    <button class="ui button">Github</button>
+                                    <div class="or"></div>
+                                    <button class="ui facebook button">Facebook</button>
+                                </div>
+                            </div>
+                            <!-- Nút download -->
+                            <div class="item">
+                                <div class="ui circular icon blue button">
+                                    <i class="download white icon"></i>&ensp;Download
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <!-- Nút download -->
-                    <div class="item">
-                        <div class="ui circular icon blue button">
-                            <i class="download white icon"></i>&ensp;Download
-                        </div>
-                    </div>
-
                 </div>
 
-            </div>
+            </div><!-- Kết thúc container -->
+
         </div>
     </div>
+    <!-- Kết thúc menu -->
 
 
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
