@@ -12,7 +12,9 @@
 </head>
 
 <body>
+    <!-- Menu phụ đã bị ẩn đi (màu đen) -->
     <div class="ui sidebar left vertical inverted menu">
+        <!-- Mỗi .item là một thành phần trong menu -->
         <div class="item">
             <img src="img/logo.svg" alt="logo" width="30px">
         </div>
@@ -22,30 +24,34 @@
         <a href="#" class="item">About</a>
     </div>
 
+    <!-- Basic - menu chính của trang -->
     <div class="pusher">
         <div class="ui basic fixed borderless icon menu">
+            <!-- Thùng chứa các item cho nó thụt vào -->
             <div class="ui container">
 
+                <!-- Tất cả item bên trái -->
                 <div class="item">
                     <img src="img/logo.svg" alt="iCss">
                 </div>
+                <!-- Nút menu có ID toggle để nhận JavaScript -->
                 <div id="toggle" class="item">
                     <i class="sidebar icon"></i>
                     &ensp;Menu
                 </div>
 
+                <!-- Tất cả .item bên phải -->
                 <div class="right menu">
-
+                    
+                    <!-- nút Github & Facebook -->
                     <div class="item">
-                        <!-- contact team -->
                         <div class="ui buttons">
                             <button class="ui button">Github</button>
                             <div class="or"></div>
                             <button class="ui facebook button">Facebook</button>
                         </div>
                     </div>
-
-                    <!-- social -->
+                    <!-- Nút download -->
                     <div class="item">
                         <div class="ui circular icon blue button">
                             <i class="download white icon"></i>&ensp;Download
@@ -62,12 +68,7 @@
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
         crossorigin="anonymous"></script>
     <script src="lib/js/semantic.min.js"></script>
-    <script>
-        $('#toggle').click(function () {
-            $('.ui.sidebar').transition('pulse');
-            $('.ui.sidebar').sidebar('toggle');
-        });
-    </script>
+    <script src="lib/js/main.js"></script>
 </body>
 
 </html>
