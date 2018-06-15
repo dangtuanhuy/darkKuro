@@ -87,3 +87,18 @@ table {
 	bottom: 0;	
 
 }
+
+/* Menu CSS code */
+.ui.basic.menu {transition: 450ms ease;}
+.ui.basic.menu.firstMenu {
+	height: 115px;
+	background: transparent;
+	box-shadow: none;
+	border: none;
+}
+
+.ui.basic.menu.changeMenu {
+	height: 70px;
+	box-shadow: none; border: none;
+	background: #eef4f9!important;
+}
