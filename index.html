@@ -14,15 +14,23 @@
 <body>
     <!-- Bắt đầu menu -->
     <!-- Menu phụ đã bị ẩn đi (màu đen) -->
-    <div class="ui sidebar left vertical inverted menu">
-        <!-- Mỗi .item là một thành phần trong menu -->
+    <div class="ui sidebar left vertical inverted menu"><!--
+        ui là mặc định
+        sidebar tạo menu ẩn
+        left bên trái
+        vertical chiều dọc
+        inverted nền đen chữ trắng(bỏ class này nền trắng chữ đen)
+        menu div này thành menu
+    -->
+        <!--Mỗi .item là một thành phần trong menu -->
         <div class="item">
-            <img src="img/logo.svg" alt="logo" width="30px">
+            <img src="img/logo.svg" alt="logo">
         </div>
         <a href="#" class="item">Introduction</a>
         <a href="#" class="item">Documentation</a>
         <a href="#" class="item">Examples</a>
         <a href="lib/pages/teams.html" class="item">Teams</a>
+        <a href="#" class="item">About Us</a>
     </div>
     <!-- Kết thúc menu phụ -->
 
@@ -30,6 +38,16 @@
     <div class="pusher">
         <!-- Basic - menu chính của trang -->
         <div class="ui basic fixed borderless icon menu firstMenu" id="menu">
+    <!-- Basic - menu chính của trang -->
+    <div class="pusher"><!--Menu có thể được làm mờ-->
+        <div class="ui basic fixed borderless icon menu"><!--
+            basic mặc định
+            fixed cố định menu
+            borderless bỏ các đường viền các div class item
+            icon thông báo trong menu có dùng icon 
+        -->
+
+            <!-- Thùng chứa các item cho nó thụt vào -->
             <div class="ui container">
                 <!-- Thùng chứa các item cho nó thụt vào -->
                 <!-- Tất cả item bên trái -->
@@ -81,6 +99,12 @@
                                     <button class="ui inverted standard button">Get Started</button>
                                 </div>
                             </div>
+                    <!-- Nút download -->
+                    <div class="item">
+                        <div class="ui circular icon blue button"><!--
+                            circular bo tròn nút
+                        -->
+                            <i class="download white icon"></i>&ensp;Download
                         </div>
                     </div>
                 </div>
